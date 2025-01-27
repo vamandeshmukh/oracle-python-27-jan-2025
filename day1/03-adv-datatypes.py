@@ -40,13 +40,12 @@
 
 
 
-# # ChainMap
+# ChainMap
 
-# from collections import ChainMap
+from collections import ChainMap
 
-# my_list1 = {'Sonu': 10.25, 'Monu': 12.50}
-# my_list2 = {'Tonu': 15.50, 'Sonu': 11.50}
-
+my_list1 = {'Sonu': 10.25, 'Monu': 12.50}
+my_list2 = {'Tonu': 15.50, 'Sonu': 11.50}
 
 # dicts = ChainMap(my_list1, my_list2)
 # print(dicts)
@@ -59,4 +58,14 @@ Emp = namedtuple('Emp', ['eid', 'name', 'salary'])
 emp1 = Emp(101, 'Sonu', 10.25)
 emp2 = Emp(102, 'Monu', 12.25)
 
-print(emp1.name, emp1.salary)
+# print(emp1.name, emp1.salary)
+
+# num = 10
+# num = 'abc'
+# num = False 
+
+# double salary = 10.5
+
+# typesafety 
+
+
