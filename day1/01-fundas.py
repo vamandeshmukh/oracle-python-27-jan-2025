@@ -169,16 +169,34 @@ a, b = 5, 5
 #         # pass # like a placeholder 
 #     print(key, value)
     
-# nested loop 
+# # nested loop 
 
-for i in range(1, 6):
-    for j in range(1, 6):
-        print(i, j)
+# for i in range(1, 6):
+#     for j in range(1, 6):
+#         print(i, j)
 
 #  write a program to find berth type based on berth number in indian railway 3A coaches 
 # 1 - 72 
 # lower, middle, upper, sidelower, sideupper
- 
-#  berth_number = 1 # input 
-#  type_of_berth = 'lower' # output 
+# berth_number = 1 # input 
+# type_of_berth = 'lower' # output 
+
+# berth_number = int(input('Please enter your berth number 1 - 72'))
+berth_number = 22 # input 
+if berth_number >= 1 and berth_number <= 72:
+    print(berth_number)
+    if berth_number % 8 == 1 or berth_number % 8 == 4:
+        print('lower')
+    elif berth_number % 8 == 2 or berth_number % 8 == 5:
+        print('middle')
+    elif berth_number % 8 == 3 or berth_number % 8 == 6:
+        print('upper')
+    elif berth_number % 8 == 7:
+        print('sidelower')
+    elif berth_number % 8 == 0:
+        print('sideupper')
+else:
+    print('invalid berth number')
+
+
 
