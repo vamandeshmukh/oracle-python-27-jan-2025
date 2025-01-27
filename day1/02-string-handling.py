@@ -50,7 +50,7 @@ salary = 10.25
 
 # f-strings
 # print('My name is {name} and my salary is {salary}.')
-# print(f'My name is {name} and my salary is {salary}.')
+print(f'My name is {name} and my salary is {salary}.')
 
 # % 
 print('My name is %s and my salary is %f.' %(name, salary))
