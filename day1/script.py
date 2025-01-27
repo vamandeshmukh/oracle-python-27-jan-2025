@@ -26,9 +26,5 @@
 
 # program to add two integers and print the sum , three vriables 
 
-
-
-
-
-
+# arithmetic operators in python 
 
