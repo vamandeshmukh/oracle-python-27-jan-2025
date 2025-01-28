@@ -90,3 +90,4 @@ print(dbl)
 sum = reduce(lambda a, b : a + b, dbl) 
 print(sum)
 
+# Can you summarise filter map reduce , the diffrences
