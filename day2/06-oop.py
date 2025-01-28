@@ -81,10 +81,10 @@ class Employee :
         self.name = name 
         self.__salary = salary # __private field 
         
-    def set_salary(self, salary):
+    def set_salary(self, salary): # setter 
         self.__salary = salary
     
-    def get_salary(self):
+    def get_salary(self): # getter 
         return self.__salary
     
     def emp_data(self):
@@ -92,6 +92,8 @@ class Employee :
     
 emp2 = Employee(102, 'Monu', 10.25)
 print(emp2.id, emp2.name, emp2.get_salary())
+# emp2.__salary = 12.50 # error 
+print(emp2._Employee__salary) # possible but not recommenred 
 emp2.set_salary(12.50)
 print(emp2.id, emp2.name, emp2.get_salary())
 
