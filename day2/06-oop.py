@@ -85,15 +85,45 @@ class Employee :
         self.__salary = salary
     
     def get_salary(self): # getter 
-        return self.__salary
+        return self.__salary 
     
     def emp_data(self):
         print(self.id, self.name)
-    
+
 emp2 = Employee(102, 'Monu', 10.25)
 print(emp2.id, emp2.name, emp2.get_salary())
 # emp2.__salary = 12.50 # error 
+
 print(emp2._Employee__salary) # possible but not recommenred 
 emp2.set_salary(12.50)
 print(emp2.id, emp2.name, emp2.get_salary())
+
+# Inheritance  
+
+# sub class extends super class 
+class ContractualEmployee (Employee):
+    
+    # subclass has access to properties of super class 
+    # subclass can create its own functions as well 
+    def show_bonus(self):
+        print(self.get_salary() + 10)
+        
+# polymorphism - method overriding 
+    def emp_data(self):
+        print(self.id, self.name, self.get_salary())
+
+
+emp3 = ContractualEmployee(103, 'Ponu', 15.25)
+emp3.emp_data()
+emp3.show_bonus()
+
+# Polymorphism 
+
+
+
+
+
+
+
+
 
