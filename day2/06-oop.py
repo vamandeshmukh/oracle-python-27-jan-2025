@@ -26,23 +26,72 @@
 # emp1.emp_data()
 
 
-# simple class example 
+# # simple class example 
+# class Employee :
+    
+#     # special method == constructor 
+#     def __init__(self, id, name):
+#         self.id = id 
+#         self.name = name 
+    
+#     def emp_data(self):
+#         print(self.id, self.name)
+    
+# # emp1 = Employee() # call to constructor - __init__(self):
+
+# emp1 = Employee(101, 'Sonu')
+# # emp1.emp_data()
+# print(emp1.id, emp1.name)
+
+
+# # simple class without a constructor 
+# class Employee :
+        
+#     def emp_data(self):
+#         print(self.id, self.name)
+    
+# # emp1 = Employee(101, 'Sonu')
+# emp1 = Employee()
+# emp1.id = 101
+# emp1.name = 'Sonu'
+# print(emp1.id, emp1.name)
+
+
+# class Employee :
+    
+#     def __init__(self, id, name):
+#         self.id = id 
+#         self.name = name 
+    
+#     def emp_data(self):
+#         print(self.id, self.name)
+    
+# emp1 = Employee(101, 'Sonu')
+# print(emp1.id, emp1.name)
+
+# emp2 = Employee(102, 'Monu')
+# print(emp2.id, emp2.name)
+
+# Encapsulation 
+
 class Employee :
     
-    # special method == constructor 
-    def __init__(self, id, name):
+    def __init__(self, id, name, salary):
         self.id = id 
         self.name = name 
+        self.__salary = salary # __private field 
+        
+    def set_salary(self, salary):
+        self.__salary = salary
+    
+    def get_salary(self):
+        return self.__salary
     
     def emp_data(self):
         print(self.id, self.name)
     
-# emp1 = Employee() # call to constructor - __init__(self):
-
-emp1 = Employee(101, 'Sonu')
-emp1.emp_data()
-
-
-
-
+emp2 = Employee(102, 'Monu', 10.25)
+print(emp2.id, emp2.name, emp2.get_salary())
+emp2.set_salary(12.50)
+print(emp2.id, emp2.name, emp2.get_salary())
 
