@@ -29,7 +29,8 @@ class Employee :
         self.id = id 
         self.name = name 
         if age < 18 or age > 65: # manually raise the exception 
-            raise InvalidAgeError(f'{age} is an invalid age.')
+            # raise InvalidAgeError(f'{age} is an invalid age.')
+            raise InvalidAgeError()
         self.age = age 
             
     def emp_data(self):
@@ -40,7 +41,7 @@ try:
     emp1 = Employee(101, 'Sonu', 25)
     emp1.emp_data()
 except InvalidAgeError as e:
-    print(e)
+    print(f'{e}')
     
 try:
     emp2 = Employee(102, 'Monu', 16)
