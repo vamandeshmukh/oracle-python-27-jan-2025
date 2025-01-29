@@ -22,7 +22,8 @@ class InvalidAgeError (Exception):
         self.age =age
         self.message = message
         super().__init__(self.message)
-
+        
+# class in which custom exception is raised 
 class Employee :
     
     def __init__(self, id, name, age):
@@ -35,6 +36,7 @@ class Employee :
     def emp_data(self):
         print(self.id, self.name, self.age)
 
+# custom exception handled 
 try:     
     emp1 = Employee(101, 'Sonu', 25)
     emp1.emp_data()
