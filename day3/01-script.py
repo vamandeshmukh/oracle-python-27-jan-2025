@@ -18,7 +18,7 @@ class Employee :
         print(self.id, self.name)
     
 emp1 = Employee(101, 'Sonu')
-emp2 = Employee(101, 'Sonu')
+emp2 = Employee(102, 'Monu')
 
 print(emp1.id, emp1.name)
 print(emp2.id, emp2.name)
