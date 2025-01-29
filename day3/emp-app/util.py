@@ -10,5 +10,6 @@ def get_emp():
     dep = em.Department()
     # dep = Department()
     
-    print(emp.emp_data())
+    # print(emp.emp_data())
+    emp.emp_data() 
     
