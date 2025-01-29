@@ -18,8 +18,7 @@
 # custom exception class 
 class InvalidAgeError (Exception):
     
-    def __init__ (self, age, message = 'An exception occured.'):
-        self.age =age
+    def __init__ (self, message = 'An exception occured.'):
         self.message = message
         super().__init__(self.message)
         
@@ -29,8 +28,8 @@ class Employee :
     def __init__(self, id, name, age):
         self.id = id 
         self.name = name 
-        if age < 18 or age > 65:
-            raise InvalidAgeError(age, 'age is invalid')
+        if age < 18 or age > 65: # manually raise the exception 
+            raise InvalidAgeError(f'{age} is an invalid age.')
         self.age = age 
             
     def emp_data(self):
