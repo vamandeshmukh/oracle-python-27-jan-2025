@@ -5,9 +5,15 @@ import numpy as np
 
 api_url = 'https://jsonplaceholder.typicode.com/posts'
 response = rq.get(api_url)
+data = response.json()
+# print(data)
 
-arr = np.array([d['title'] for d in response.json()])
-# print(arr)
+arr = np.array([d['title'] for d in data])
+
+raw_list = arr.tolist()
+for r in raw_list:
+    print(r)
+
 # print(arr.size)
 # print(arr.shape)
 # print(arr.dtype)
@@ -16,4 +22,4 @@ arr = np.array([d['title'] for d in response.json()])
 # print(np.char.split(arr, ' '))
 #  "title": "at nam consequatur ea labore ea harum",
 # list(['at', 'nam', 'consequatur', 'ea', 'labore', 'ea', 'harum'])]
-print(np.sort(arr))
+# print(np.sort(arr))
