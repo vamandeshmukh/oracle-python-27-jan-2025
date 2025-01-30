@@ -23,3 +23,4 @@ highest_close_index = np.argmax(close_prices)
 highest_close_date = dates[highest_close_index]
 
 print(f"Highest Closing Price: {highest_close} on {highest_close_date}")
+
