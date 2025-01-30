@@ -10,9 +10,10 @@ data = response.json()
 
 arr = np.array([d['title'] for d in data])
 
-for r in arr.tolist():
-    print(r)
+# for r in arr.tolist():
+#     print(r)
 
+# print(arr)
 # print(arr.size)
 # print(arr.shape)
 # print(arr.dtype)
@@ -22,3 +23,4 @@ for r in arr.tolist():
 #  "title": "at nam consequatur ea labore ea harum",
 # list(['at', 'nam', 'consequatur', 'ea', 'labore', 'ea', 'harum'])]
 # print(np.sort(arr))
+print(np.char.str_len(arr)) # langth of each string element 
