@@ -1,4 +1,4 @@
-
+# numpy array of strings 
 
 import requests as rq
 import numpy as np

@@ -42,15 +42,21 @@ import numpy as np
 # array manipulation 
 # concatination 
 
+# arr = np.array([25, 31, 22, 9, 17])
+# # print(arr)
+# arr2 = np.array([11, 20, 27, 7, 15])
+# # print(arr2)
+# con_arr =np.concatenate([arr, arr2])
+# print(con_arr)
+
+# # split 
+# split_arr = np.split(con_arr, 2)
+# print(split_arr)
+# print(split_arr[0])
+
+
 arr = np.array([25, 31, 22, 9, 17])
 # print(arr)
-arr2 = np.array([11, 20, 27, 7, 15])
-# print(arr2)
-con_arr =np.concatenate([arr, arr2])
-print(con_arr)
-
-# split 
-split_arr = np.split(con_arr, 2)
-print(split_arr)
-print(split_arr[0])
-
+# indexing 
+print(arr[[1, 3]])
+print(arr[arr > 20])
