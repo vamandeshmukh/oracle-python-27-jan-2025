@@ -10,8 +10,7 @@ data = response.json()
 
 arr = np.array([d['title'] for d in data])
 
-raw_list = arr.tolist()
-for r in raw_list:
+for r in arr.tolist():
     print(r)
 
 # print(arr.size)
