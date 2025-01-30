@@ -53,3 +53,4 @@ print(con_arr)
 split_arr = np.split(con_arr, 2)
 print(split_arr)
 print(split_arr[0])
+
