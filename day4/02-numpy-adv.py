@@ -20,7 +20,6 @@ arr = np.array([d['title'] for d in data])
 # print(np.char.upper(arr))
 # print(np.char.find(arr, 'e'))
 # print(np.char.split(arr, ' '))
-#  "title": "at nam consequatur ea labore ea harum",
 # list(['at', 'nam', 'consequatur', 'ea', 'labore', 'ea', 'harum'])]
 # print(np.sort(arr))
 print(np.char.str_len(arr)) # langth of each string element 
