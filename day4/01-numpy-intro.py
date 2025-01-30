@@ -26,21 +26,30 @@ import numpy as np
 # print(brd_arr)
 
 # statistical operations 
+
+# arr = np.array([25, 31, 22, 9, 17])
+# print(arr)
+# # mean 
+# mean_arr = np.mean(arr)
+# print(mean_arr)
+# # median 
+# med_arr = np.median(arr)
+# print(med_arr)
+# # standard deviation 
+# st_dev = np.std(arr)
+# print(st_dev)
+
+# array manipulation 
+# concatination 
+
 arr = np.array([25, 31, 22, 9, 17])
-print(arr)
+# print(arr)
+arr2 = np.array([11, 20, 27, 7, 15])
+# print(arr2)
+con_arr =np.concatenate([arr, arr2])
+print(con_arr)
 
-# mean 
-mean_arr = np.mean(arr)
-print(mean_arr)
-# median 
-med_arr = np.median(arr)
-print(med_arr)
-# standard deviation 
-st_dev = np.std(arr)
-print(st_dev)
-
-
-
-
-
-
+# split 
+split_arr = np.split(con_arr, 2)
+print(split_arr)
+print(split_arr[0])
