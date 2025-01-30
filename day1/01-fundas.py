@@ -199,4 +199,5 @@ else:
     print('invalid berth number')
 
 
-
+def my_fun():
+    '''this function is use by Vaman Deshmukh in VS Code.'''
