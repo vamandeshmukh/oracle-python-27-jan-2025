@@ -1,4 +1,5 @@
 
+import matplotlib.pyplot as plt 
 import requests as rq 
 import pandas as pd 
 
