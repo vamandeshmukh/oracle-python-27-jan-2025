@@ -14,7 +14,7 @@ key_path = r'D:\VamanPro\Codes\oracle-jan-2025\keys\alpha-vantage-api-key.txt'
 with open(key_path, 'r') as file:
     api_key = file.read()
 
-symbol = 'SBIN'
+symbol = 'INFY'
 market = 'BSE'
 api_url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}.{market}&outputsize=full&apikey={api_key}'
 
