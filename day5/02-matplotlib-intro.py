@@ -12,7 +12,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-df.plot(x= 'name', y = 'age', kind = 'bar', title = 'Names and Ages')
+df.plot(x= 'name', y = 'age', kind = 'line', title = 'Names and Ages')
 
 # plt.savefig('names-and-ages.png')
 plt.show()
