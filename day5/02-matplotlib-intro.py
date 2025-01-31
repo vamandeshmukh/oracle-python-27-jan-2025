@@ -14,6 +14,6 @@ df = pd.DataFrame(data)
 
 df.plot(x= 'name', y = 'age', kind = 'bar', title = 'Names and Ages')
 
-plt.show()
 # plt.savefig('names-and-ages.png')
+plt.show()
 print('end')
